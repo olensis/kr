@@ -3,15 +3,15 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.IntStream;
 public class Employee {
     public int[] getSalary;
-    private String FIO;
+    private String fullName;
     private int department;
     private int salary;
     private static int Counter;
     private static AtomicInteger COUNTER = new AtomicInteger(1);
     private final int id;
 
-    public Employee(String FIO, int department, int salary) {
-        this.FIO = FIO;
+    public Employee(String fullName, int department, int salary) {
+        this.fullName = fullName;
         this.department = department;
         this.salary = salary;
         this.id = ++Counter;
@@ -19,7 +19,7 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "Id: " + id + " Fio: " + FIO + " department: " + department + " salary: " + salary;
+        return "Id: " + id + " fullName: " + fullName + " department: " + department + " salary: " + salary;
     }
 
     public int getid() {
@@ -27,7 +27,7 @@ public class Employee {
     }
 
     public String getFIO() {
-        return this.FIO;
+        return this.fullName;
     }
 
     public int getDepartment() {
@@ -49,10 +49,6 @@ public class Employee {
     public void SetSalary(int salary) {
         this.salary = salary;
     }
-
-
-
-
 
 
 }

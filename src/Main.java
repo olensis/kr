@@ -1,11 +1,13 @@
 import java.io.OptionalDataException;
 import java.util.*;
+
 public class Main {
     private static double findSumWithoutUsingStream(Employee employee) {
         double sum = findSumWithoutUsingStream(employee);
         Employee[] empl = new Employee[5];
         return (double) sum / empl.length;
     }
+
     public static void main(String[] args) {
         Employee[] empl = new Employee[5];
         empl[0] = new Employee("Иванов Иван Иванович", 1, 25000);
@@ -20,7 +22,7 @@ public class Main {
             int salaryOfEmployee2 = empl[2].getSalary();
             int salaryOfEmployee3 = empl[3].getSalary();
             int salaryOfEmployee4 = empl[4].getSalary();
-            int sum = salaryOfEmployee1+salaryOfEmployee2+salaryOfEmployee3+salaryOfEmployee4+salaryOfEmployee;
+            int sum = salaryOfEmployee1 + salaryOfEmployee2 + salaryOfEmployee3 + salaryOfEmployee4 + salaryOfEmployee;
             System.out.println("Сумма затрат в месяц " + sum);
 
             Arrays.sort(empl, Comparator.comparing(Employee::getSalary));
@@ -31,12 +33,12 @@ public class Main {
             System.out.println("Самая невысокая зп у" + empl[0]);
             double findSumWithoutUsingStream = sum / empl.length;
             System.out.println(" средняя зп" + findSumWithoutUsingStream);
-            String FIO= empl [0].getFIO();
-            String FIO1= empl [1].getFIO();
-            String FIO2= empl [2].getFIO();
-            String FIO3= empl [3].getFIO();
-            String FIO4= empl [4].getFIO();
-            System.out.println("ФИО сотрудников " + FIO1+ ","+ FIO+"," + FIO4+ "," + FIO2+ ","+ FIO3);
+            String fullName = empl[0].getFIO();
+            String fullName1 = empl[1].getFIO();
+            String fullName2 = empl[2].getFIO();
+            String fullName3 = empl[3].getFIO();
+            String fullName4 = empl[4].getFIO();
+            System.out.println("ФИО сотрудников " + fullName + "," + fullName1 + "," + fullName2 + "," + fullName3 + "," + fullName4);
         }
 
     }
