@@ -26,7 +26,7 @@ public class Employee {
         return this.id;
     }
 
-    public String getFIO() {
+    public String getfullName() {
         return this.fullName;
     }
 

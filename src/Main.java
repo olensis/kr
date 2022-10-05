@@ -33,11 +33,11 @@ public class Main {
             System.out.println("Самая невысокая зп у" + empl[0]);
             double findSumWithoutUsingStream = sum / empl.length;
             System.out.println(" средняя зп" + findSumWithoutUsingStream);
-            String fullName = empl[0].getFIO();
-            String fullName1 = empl[1].getFIO();
-            String fullName2 = empl[2].getFIO();
-            String fullName3 = empl[3].getFIO();
-            String fullName4 = empl[4].getFIO();
+            String fullName = empl[0].getfullName();
+            String fullName1 = empl[1].getfullName();
+            String fullName2 = empl[2].getfullName();
+            String fullName3 = empl[3].getfullName();
+            String fullName4 = empl[4].getfullName();
             System.out.println("ФИО сотрудников " + fullName + "," + fullName1 + "," + fullName2 + "," + fullName3 + "," + fullName4);
         }
 
